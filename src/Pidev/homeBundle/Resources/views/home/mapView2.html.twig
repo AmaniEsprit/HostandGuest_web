@@ -1,0 +1,197 @@
+{% extends "FullLayout.html.twig" %}
+{% block content %}
+
+<section class="searchFilter-main">
+    <section class="searchFormTop">
+        <div class="container">
+            <div class="searchCenter">
+                <div class="refineCenter"> <span class="icon icon-filter"></span> <span>Refine Results</span> </div>
+                <div class="searchFilter">
+                    <div class="input-box">
+                        <div class="icon icon-grid-view"></div>
+                        <input type="text" placeholder="Wedding Planning">
+                    </div>
+                    <div class="input-box searchlocation">
+                        <div class="icon icon-location-1"></div>
+                        <input type="text" placeholder="Ahmedabad, Gujarat, India">
+                    </div>
+                    <div class="input-box date">
+                        <div class="icon icon-calander-month"></div>
+                        <input type="text" placeholder="29/08/2015" id="datepicker3">
+                    </div>
+                    <input type="submit" class="btn" value="Search">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a>/</li>
+                    <li><a href="#">Event Organizers</a>/</li>
+                    <li class="active"><a href="#">Ahmedabad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mapView venues-view">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="left-side">
+                            <div class="search">
+                                <div class="search-icon">
+                                    <div class="icon icon-search"></div>
+                                </div>
+                                <input type="text" placeholder="Search by name">
+                            </div>
+                            <div class="filter-view">
+                                <div class="filter-block">
+                                    <div class="title">
+                                        <h2>Food And Drinks</h2>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-20">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-20" value="1">
+                                            Non vegetarian</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-21">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-21" value="1">
+                                            Vegetarian</label>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <div class="title">
+                                        <h2>Number of Guests</h2>
+                                        <div class="reste-filter"> <a href="#"><span class="icon icon-reset"></span>Reset</a> </div>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-22">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-22" value="1">&lt; 10</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-23">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-23" value="1">10 - 100</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-24">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-24" value="1">100 - 200</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-25">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-25" value="1" checked="">200 - 500</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-26">
+                                            <input type="checkbox" name="sample-checkbox-01" id="checkbox-26" value="1" >&gt; 500</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-link">
+                                <h2>People also viewed...</h2>
+                                <ul>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Denmark</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Germany - Frankfurt / West</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Greater Mexico City</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>HI - Big Island</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Hungary</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Poland</a></li>
+                                </ul>
+                            </div>
+                            <div class="left-productBox hidden-sm hidden-xs">
+                                <h2>Featured Venues</h2>
+                                <div class="product-img"><img src="images/property-img/venues-img8.jpg" alt=""></div>
+                                <h3>Hilton Berlin </h3>
+                                <p>Mohrenstrasse 30 Berlin, 10117 - Germany</p>
+                                <div class="reviews">3.5 <div class="star"><div style="width:70%;" class="fill"></div></div>reviews</div>
+                                <a href="#">Vewi all Details <span class="icon icon-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="middle-side">
+                            <div class="toolbar">
+                                <div class="finde-count">7  Venues found. </div>
+                                <div class="right-tool">
+                                    <div class="select-box">
+                                        <select name="country_id" id="setUp_select" tabindex="1" >
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                        </select>
+                                    </div>
+                                    <div class="link">
+                                        <ul>
+                                            <li class="active"><a href="#">Map</a></li>
+                                            <li><a href="#">List</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mapLocation"> <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/location.jpg') }}" alt="your location on map" /> </div>
+
+                        </div>
+                        <div class="right-side">
+                            <div class="resultTab">
+                                <ul>
+                                    <li class="active"><a href="#"><span class="icon icon-list"></span>97 Results</a></li>
+                                    <li><a href="#"><span class="icon icon-heart-filled"></span>2 Shortlist</a></li>
+                                    <li class="right-link"><a href="#">View all</a></li>
+                                </ul>
+                            </div>
+                            <div class="resultsList">
+                                <div class="location">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/locationImg1.jpg') }}" alt="" />
+
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Leipzig Marriott Hotel </h4>
+                                                    <address>Am Hallischen Tor 1 Saxony Leipzig, 04109 - Germany</address>
+                                                    <a class="venueDetail" href="#">View All Details<span class="icon icon-arrow-right"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/locationImg2.jpg') }}" alt="" />
+
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Hotel AMANO Grand Central </h4>
+                                                    <address>Heidestrasse 62 Berlin, 10557 - Germany</address>
+                                                    <a class="venueDetail" href="#">View All Details<span class="icon icon-arrow-right"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/locationImg3.jpg') }}" alt="" />
+
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Ameron Hotel Abion...</h4>
+                                                    <address>Am Hallischen Tor 1 Saxony Leipzig, 04109 - Germany</address>
+                                                    <a class="venueDetail" href="#">View All Details<span class="icon icon-arrow-right"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}

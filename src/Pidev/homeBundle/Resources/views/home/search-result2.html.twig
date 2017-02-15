@@ -1,0 +1,498 @@
+{% extends "FullLayout.html.twig" %}
+{% block content %}
+
+
+<div class="searchFilter-main">
+    <section class="searchFormTop">
+        <div class="container">
+            <div class="searchCenter">
+                <div class="refineCenter">
+                    <span class="icon icon-filter"></span>
+                    <span>Refine Results</span>
+                </div>
+                <div class="searchFilter">
+                    <div class="input-box">
+                        <div class="icon icon-grid-view"></div>
+                        <input type="text" placeholder="Wedding Planning">
+                    </div>
+                    <div class="input-box searchlocation">
+                        <div class="icon icon-location-1"></div>
+                        <input type="text" placeholder="Germany - Berlin / East">
+                    </div>
+                    <div class="input-box date">
+                        <div class="icon icon-calander-month"></div>
+                        <input type="text" placeholder="29/08/2015" id="datepicker2">
+                    </div>
+                    <input type="submit" value="Search" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a>/</li>
+                    <li><a href="#">Wedding Planning</a>/</li>
+                    <li class="active"><a href="#">Germany - Berlin / East</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="venues-view">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="left-side">
+                            <div class="search">
+                                <div class="search-icon"><div class="icon icon-search"></div></div>
+                                <input type="text" placeholder="Search by name">
+                            </div>
+                            <div class="filter-view">
+                                <div class="filter-block">
+                                    <div class="title">
+                                        <h2>Food And Drinks</h2>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-20"><input type="checkbox" name="sample-checkbox-01" id="checkbox-20" value="1">Non Vegetarian</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-21"><input type="checkbox" name="sample-checkbox-01" id="checkbox-21" value="1">Vegetarian</label>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <div class="title">
+                                        <h2>Number of Guests</h2>
+                                        <div class="reste-filter">
+                                            <a href="#"><span class="icon icon-reset"></span>Reset</a>
+                                        </div>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-22"><input type="checkbox" name="sample-checkbox-01" id="checkbox-22" value="1">&lt; 10</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-23"><input type="checkbox" name="sample-checkbox-01" id="checkbox-23" value="1">10 - 100</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-24"><input type="checkbox" name="sample-checkbox-01" id="checkbox-24" value="1">100 - 200</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-25"><input type="checkbox" name="sample-checkbox-01" id="checkbox-25" value="1" checked="">200 - 500</label>
+                                    </div>
+                                    <div class="check-slide">
+                                        <label class="label_check" for="checkbox-26"><input type="checkbox" name="sample-checkbox-01" id="checkbox-26" value="1" >&gt; 500</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-link">
+                                <h2>People also viewed...</h2>
+                                <ul>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Denmark</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Germany - Frankfurt / West</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Greater Mexico City</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>HI - Big Island</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Hungary</a></li>
+                                    <li><a href="#"><span class="icon icon-arrow-right"></span>Poland</a></li>
+                                </ul>
+                            </div>
+                            <div class="left-productBox hidden-sm">
+                                <h2>Featured Venues</h2>
+                                <div class="product-img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/venues-img8.jpg') }}" alt=""></div>
+
+                                <h3>Hilton Berlin </h3>
+                                <p>Mohrenstrasse 30 Berlin, 10117 - Germany</p>
+                                <div class="reviews">3.5 <div class="star"><div style="width:70%;" class="fill"></div></div>reviews</div>
+                                <a href="#">Vewi all Details <span class="icon icon-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-lg-9 col-sm-12">
+                        <div class="right-side">
+                            <div class="toolbar">
+                                <div class="finde-count">97  Venues found.  </div>
+                                <div class="right-tool">
+                                    <div class="select-box">
+                                        <select name="country_id" id="setUp_select" tabindex="1" >
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                            <option>Near by</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="shortlist-btn"><span class="icon icon-heart-filled"></span>7 Shortlist</a>
+                                    <div class="link">
+                                        <ul>
+                                            <li><a href="#">Map</a></li>
+                                            <li class="active"><a href="#">List</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="venues-slide first">
+                                <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/venues-img.jpg') }}" alt=""></div>
+
+                                <div class="text">
+                                    <h3>Leipzig Marriott Hotel </h3>
+                                    <div class="address">Am Hallischen Tor 1 Saxony Leipzig, 04109 - Germany</div>
+                                    <div class="reviews">3.5 <div class="star"><div class="fill" style="width:70%;"></div></div>reviews</div>
+                                    <div class="outher-info">
+                                        <div class="info-slide first">
+                                            <label>Seating Capacity</label>
+                                            <span>20 - 160</span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Price Range</label>
+                                            <span>$ 1000 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Hotel Star Rating</label>
+                                            <div class="star">
+                                                <div class="fill" style="width:61%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Min. Booking Amount</label>
+                                            <span>$ 5000 <small>(onwards)</small></span>
+                                        </div>
+                                        <div class="venues-link">
+                                            <a href="#">4 Venues</a>
+                                        </div>
+                                    </div>
+                                    <div class="outher-link">
+                                        <ul>
+                                            <li><a href="#"><span class="icon icon-calander-check"></span>Vérifier disponibilité</a></li>
+                                            <li><a href="javascript:;" data-toggle="modal" data-target="#contactModal1"><span class="icon icon-phone"></span>Contacter Vendeur</a></li>
+                                            <li><a href="#"><span class="icon icon-heart"></span>Ajouter aux favoris</a></li>
+                                            <li><a href="{{ path('mapView_page') }}"><span class="icon icon-location-1"></span>observer sur map</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#" class="btn">Reserver maintenant</a>
+                                        <a href="{{ path('search_detail_page') }}" class="btn gray"> Details <span class="icon icon-arrow-down"></span></a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade modal-vcenter" id="contactModal1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog contactvendor-popup" role="document">
+                                        <div class="modal-content">
+                                            <div class="close-icon" aria-label="Close" data-dismiss="modal" ><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/close-icon.png') }}" alt=""></div>
+
+                                            <h1>Mariom Banquet</h1>
+                                            <div class="note">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Last Name ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Email ID">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="input-slide">
+                                                        <textarea placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="submit-slide">
+                                                        <input type="submit" value="Send" class="btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="venues-slide">
+                                <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/venues-img2.jpg') }}" alt=""></div>
+
+                                <div class="text">
+                                    <h3>Hotel AMANO Grand Central </h3>
+                                    <div class="address">Heidestrasse 62 Berlin, 10557 - Germany</div>
+                                    <div class="reviews">3.5 <div class="star"><div class="fill" style="width:70%;"></div></div>reviews</div>
+                                    <div class="outher-info">
+                                        <div class="info-slide first">
+                                            <label>Seating Capacity</label>
+                                            <span>20 - 160</span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Price Range</label>
+                                            <span>$ 5100 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Hotel Star Rating</label>
+                                            <div class="star">
+                                                <div class="fill" style="width:61%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Min. Booking Amount</label>
+                                            <span>$ 1000 <small>(onwards)</small></span>
+                                        </div>
+                                        <div class="venues-link">
+                                            <a href="#">4 Venues</a>
+                                        </div>
+                                    </div>
+                                    <div class="outher-link">
+                                        <ul>
+                                            <li><a href="#"><span class="icon icon-calander-check"></span>Vérifier disponibilité</a></li>
+                                            <li><a href="javascript:;" data-toggle="modal" data-target="#contactModal2"><span class="icon icon-phone"></span>Contacter Vendeur</a></li>
+                                            <li><a href="#"><span class="icon icon-heart-filled"></span>Ajouter aux favoris</a></li>
+                                            <li><a href="{{ path('mapView_page') }}"><span class="icon icon-location-1"></span>Observer sur map</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#" class="btn">Request Booking</a>
+                                        <a href="{{ path('search_detail_page') }}" class="btn gray"> Details <span class="icon icon-arrow-down"></span></a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade modal-vcenter" id="contactModal2" tabindex="-1" role="dialog" >
+                                    <div class="modal-dialog contactvendor-popup" role="document">
+                                        <div class="modal-content">
+                                            <div class="close-icon" aria-label="Close" data-dismiss="modal" ><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/close-icon.png') }}" alt=""></div>
+
+                                            <h1>Mariom Banquet</h1>
+                                            <div class="note">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Last Name ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Email ID">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="input-slide">
+                                                        <textarea placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="submit-slide">
+                                                        <input type="submit" value="Send" class="btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="venues-slide">
+                                <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/venues-img3.jpg') }}" alt=""></div>
+
+                                <div class="text">
+                                    <h3>Ameron Hotel Abion Spreebogen Berlin </h3>
+                                    <div class="address">Am Hallischen Tor 1 Saxony Leipzig, 04109 - Germany</div>
+                                    <div class="reviews">3.5 <div class="star"><div class="fill" style="width:70%;"></div></div>reviews</div>
+                                    <div class="outher-info">
+                                        <div class="info-slide first">
+                                            <label>Seating Capacity</label>
+                                            <span>20 - 160</span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Price Range</label>
+                                            <span>$ 5100 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Hotel Star Rating</label>
+                                            <div class="star">
+                                                <div class="fill" style="width:61%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Min. Booking Amount</label>
+                                            <span>$ 1000 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="venues-link">
+                                            <a href="#">4 Venues</a>
+                                        </div>
+                                    </div>
+                                    <div class="outher-link">
+                                        <ul>
+                                            <li><a href="#"><span class="icon icon-calander-check"></span>Vérifier disponibilité</a></li>
+                                            <li><a href="javascript:;" data-toggle="modal" data-target="#contactModal3"><span class="icon icon-phone"></span>Contacter Vendeur</a></li>
+                                            <li><a href="#"><span class="icon icon-heart"></span>Ajouter aux favoris</a></li>
+                                            <li><a href="{{ path('mapView_page') }}"><span class="icon icon-location-1"></span>Observer sur map</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#" class="btn">Reserver maintenant</a>
+                                        <a href="{{ path('search_detail_page') }}" class="btn gray"> Details <span class="icon icon-arrow-down"></span></a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade modal-vcenter" id="contactModal3" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog contactvendor-popup" role="document">
+                                        <div class="modal-content">
+                                            <div class="close-icon" aria-label="Close" data-dismiss="modal" ><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/close-icon.png') }}" alt=""></div>
+
+                                            <h1>Mariom Banquet</h1>
+                                            <div class="note">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Last Name ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Email ID">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="input-slide">
+                                                        <textarea placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="submit-slide">
+                                                        <input type="submit" value="Send" class="btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="venues-slide last">
+                                <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/property-img/venues-img4.jpg') }}" alt=""></div>
+
+                                <div class="text">
+                                    <h3>Hilton Berlin</h3>
+                                    <div class="address">Mohrenstrasse 30 Berlin, 10117 - Germany</div>
+                                    <div class="reviews">3.5 <div class="star"><div class="fill" style="width:70%;"></div></div>reviews</div>
+                                    <div class="outher-info">
+                                        <div class="info-slide first">
+                                            <label>Seating Capacity</label>
+                                            <span>20 - 160</span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Price Range</label>
+                                            <span>$ 5100 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Hotel Star Rating</label>
+                                            <div class="star">
+                                                <div class="fill" style="width:61%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="info-slide">
+                                            <label>Min. Booking Amount</label>
+                                            <span>$ 1000 <small>(Onwards)</small></span>
+                                        </div>
+                                        <div class="venues-link">
+                                            <a href="#">4 Venues</a>
+                                        </div>
+                                    </div>
+                                    <div class="outher-link">
+                                        <ul>
+                                            <li><a href="#"><span class="icon icon-calander-check"></span>Vérifier disponibilité</a></li>
+                                            <li><a href="javascript:;" data-toggle="modal" data-target="#contactModal4"><span class="icon icon-phone"></span>Contacter Vendeur</a></li>
+                                            <li><a href="#"><span class="icon icon-heart"></span>Ajouter aux favoris</a></li>
+                                            <li><a href="{{ path('mapView_page') }}"><span class="icon icon-location-1"></span>Observer sur map</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#" class="btn">Reserver maintenant</a>
+                                        <a href="{{ path('search_detail_page') }}" class="btn gray"> Details <span class="icon icon-arrow-down"></span></a>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade modal-vcenter" id="contactModal4" tabindex="-1" role="dialog" >
+                                    <div class="modal-dialog contactvendor-popup" role="document">
+                                        <div class="modal-content">
+                                            <div class="close-icon" aria-label="Close" data-dismiss="modal" ><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/close-icon.png') }}" alt=""></div>
+
+                                            <h1>Mariom Banquet</h1>
+                                            <div class="note">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Last Name ">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Email ID">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-slide">
+                                                        <input type="text" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="input-slide">
+                                                        <textarea placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <div class="submit-slide">
+                                                        <input type="submit" value="Send" class="btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="prev disabled"><a href="#">Prev</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li class="next"><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

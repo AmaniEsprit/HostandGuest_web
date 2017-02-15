@@ -1,0 +1,9 @@
+home:
+    path:     /index
+    defaults: { _controller: HostGuestUserBundle:User:index }
+list_user:
+    path:     /gestion_users
+    defaults: { _controller: HostGuestUserBundle:User:list_users }
+delete_user:
+    path:     /remove_user/{id}
+    defaults: { _controller: HostGuestUserBundle:User:delete_user }

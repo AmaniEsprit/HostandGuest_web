@@ -1,0 +1,64 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog login-popup" role="document">
+        <div class="modal-content">
+            <div class="close-icon" aria-label="Close" data-dismiss="modal" ></div>
+
+            <div class="left-img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/login-leftImg.png') }}" alt=""></div>
+
+
+            {% if error %}
+                <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            {% endif %}
+
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+
+                <input type="hidden" name="_target_path" value="/profile" />
+                <div class="right-info">
+                    <h1>Connexion</h1>
+                    <div class="sosal-midiyaLogin">
+                        <div class="facebook-link">
+                            <a href="#"><span class="icon icon-facebook"></span>Connexion avec facebook</a>
+                        </div>
+                        <div class="google-link">
+                            <a href="#"><span class="icon icon-google-plus"></span>Connexion avec Google+</a>
+                        </div>
+                    </div>
+                    <div class="or-text"><span>Ou bien</span></div>
+                    <div class="input-form">
+
+                        <div class="input-box">
+                            <div class="icon icon-user"></div>
+                            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                        </div>
+                        <div class="input-box">
+                            <div class="icon icon-lock"></div>
+                            <input type="password" id="password" name="_password" required="required"/>
+
+                        </div>
+                        <div class="check-slide">
+                            <div class="check">
+                                <input type="checkbox" id="remember_me" name="_remember_me" value="on" id="checkbox-02"/>
+                                <label  class="label_check" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                            </div>
+
+                            <a href="/backend_dev.php/forgot_password">Mot de passe oublié?</a>
+                        </div>
+                        <div class="submit-slide">
+                            <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" class="btn">
+                        </div>
+                    </div>
+                    <div class="signUp-link">Vous n'avez pas de compte ? <a href="javascript:void(0);"> Inscription</a></div>
+                </div>
+            </form>
+        </div>
+    </div>    </div>
+
+<div class="check">
+    <label class="label_check" for="checkbox-02"><input type="checkbox" name="sample-checkbox-01" id="checkbox-02" value="1" checked="">Remember me</label>
+
+</div>

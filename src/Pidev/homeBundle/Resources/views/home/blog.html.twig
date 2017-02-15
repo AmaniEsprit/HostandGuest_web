@@ -1,0 +1,577 @@
+{% extends "FullLayout.html.twig" %}
+{% block content %}
+
+
+
+    <section class="banner">
+        <div class="carousel" id="mainBnner">
+            <div class="item"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/banner-img/slider-img.jpg') }}" alt=""></div>
+            <div class="item"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/banner-img/slider-img2.jpg') }}" alt=""></div>
+            <div class="item"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/banner-img/slider-img3.jpg') }}" alt=""></div>
+        </div>
+        <div class="banner-nav">
+            <div class="prev"><span class="icon icon-arrow-left"></span></div>
+            <div class="next"><span class="icon icon-arrow-right"></span></div>
+        </div>
+        <div class="banner-text">
+            <div class="container">
+                <div class="search-title">
+                    <h1> Trouvez votre logement et vivez des expériences  <span>uniques </span></h1>
+                </div>
+                <div class="banner-search" align="center">
+                    <!--<div class="input-box">
+                        <div class="icon icon-grid-view"></div>
+                        <input type="text" placeholder="Event Type">
+                    </div>-->
+
+                    <div align="center">
+                        <h3> Trouver Votre Chambre à   <span>Tunisie</span></h3>
+                    </div><br>
+                    <div class="input-box date">
+                        <div class="icon icon-calander-month"></div>
+                        <input type="text" placeholder="Arrivée" id="datepicker2">
+                    </div>
+                    <div class="input-box date">
+                        <div class="icon icon-calander-month"></div>
+                        <input type="text" placeholder="Départ" id="datepicker3">
+                    </div>
+                    <div class="input-box location">
+                        <div class="icon icon-location-1"></div>
+                        <input type="text" placeholder="Zone">
+                    </div>
+                    <div class="submit-slide">
+                        <input type="submit" value="Rechercher" class="btn">
+                    </div>
+
+                    <p>Create the Perfect Event</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-type">
+        <div class="container">
+            <div class="heading">
+                <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                <div class="text">
+                    <h2>Nos services</h2>
+                </div>
+                <div class="info-text">Ouvrez la porte à un voyageur et à une nouvelle vie.
+                    Gagnez de l'argent en accueillant des voyageurs..</div>
+            </div>
+            <div class="service-catagari">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-caterers"></span>
+                            <span class="text">Caterers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-flower-pot"></span>
+                            <span class="text">Decor & Florists</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-calander"></span>
+                            <span class="text">Event Planner</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-beauty"></span>
+                            <span class="text">Make-up and Hair</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-wedding-card"></span>
+                            <span class="text">Wedding Cards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-mehandi"></span>
+                            <span class="text">Mehandi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-cake"></span>
+                            <span class="text">Cakes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-music"></span>
+                            <span class="text">DJ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-camera"></span>
+                            <span class="text">Photographers &amp; Videographers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon icon-glass"></span>
+                            <span class="text">Entertainment</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="home-event">
+                <div class="heading">
+                    <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                    <div class="text">
+                        <h2>Logements : Tunis</h2>
+                    </div>
+                    <div class="info-text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                </div>
+                <div class="row">
+                    <div class="event-slider">
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img1.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Chambre privée à tunis</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Chambre privée à tunis</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img2.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Logement entier à tunis</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Logement entier à tunis</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img3.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Birthday Party</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Birthday Party</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img1.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Event Planner</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Event Planner</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img2.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Corporate Events</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Corporate Events</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img3.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Birthday Party</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Birthday Party</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="home-event">
+                <div class="heading">
+                    <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                    <div class="text">
+                        <h2>Les expériences les plus populaires</h2>
+                    </div>
+                    <div class="info-text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                </div>
+                <div class="row">
+                    <div class="event-slider">
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img1.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Chambre privée à tunis</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Chambre privée à tunis</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img2.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Logement entier à tunis</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Logement entier à tunis</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img3.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Birthday Party</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Birthday Party</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img1.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Event Planner</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Event Planner</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img2.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Corporate Events</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Corporate Events</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="event-box">
+                                <div class="img">
+                                    <a href="#">
+                                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/event-img/event-img3.jpg') }}" alt="">
+                                        <span class="capsan">
+                                                <span>Birthday Party</span>
+                                            </span>
+                                    </a>
+                                </div>
+                                <div class="name">Birthday Party</div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ype specimen book. It has survived not only five centuries,</p>
+                                <a href="#">Voir détails</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="home-event">
+                <div class="heading">
+                    <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                    <div class="text">
+                        <h2>Liste des guides</h2>
+                    </div>
+                    <div class="info-text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+                </div>
+                <div class="row">
+                    <div class="team-view">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="member-box">
+                                    <div class="img"><img src="/Devlab/web/templates/120.72.91.53/themeforest/event_planning/images/team-memberImg/team-memberImg2.png" alt=""></div>
+
+                                    <div class="name">Mathias Weiß</div>
+                                    <div class="designation">Designer/Associate Coordinator</div>
+                                    <ul class="sosiyal-share">
+                                        <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="member-box">
+                                    <div class="img"><img src="/Devlab/web/templates/120.72.91.53/themeforest/event_planning/images/team-memberImg/team-memberImg3.png" alt=""></div>
+
+                                    <div class="name">Nadine Fleischer</div>
+                                    <div class="designation">Wedding & Event Manager</div>
+                                    <ul class="sosiyal-share">
+                                        <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="member-box">
+                                    <div class="img"><img src="/Devlab/web/templates/120.72.91.53/themeforest/event_planning/images/team-memberImg/team-memberImg1.png" alt=""></div>
+
+                                    <div class="name">Stefanie Reinhard</div>
+                                    <div class="designation">Director of Planning</div>
+                                    <ul class="sosiyal-share">
+                                        <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="friends-block">
+        <div class="container">
+            <div class="sub-title">
+                <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                <h2>Client Say’s</h2>
+                <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/heading-blackBgimg.png') }}" alt=""></div>
+            </div>
+            <div id="friend_slider" class="carousel">
+                <div class="item">
+                    <div class="friends-info">
+                        <div class="friend-img">
+                            <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/user-img/friend-img.png') }}" alt=""></div>
+                            <div class="img-fream"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/img-fream.png') }}" alt=""></div>
+                            <div class="name">John Doe</div>
+                        </div>
+                        <div class="text">
+                            <p><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/starting-point.png') }}" alt="" class="start-img">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 	Ipsum has been the industry's standard dummy text ever since the 1500s, an unknown printer took a galley of type and scrambled it  type specimen book.  <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/ending-point.png') }}" alt="" class="end-img"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="friends-info">
+                        <div class="friend-img">
+                            <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/user-img/friend-img.png') }}" alt=""></div>
+                            <div class="img-fream"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/img-fream.png') }}" alt=""></div>
+                            <div class="name">John Doe</div>
+                        </div>
+                        <div class="text">
+                            <p><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/starting-point.png') }}" alt="" class="start-img">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 	Ipsum has been the industry's standard dummy text ever since the 1500s, an unknown printer took a galley of type and scrambled it  type specimen book.  <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/ending-point.png') }}" alt="" class="end-img"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="success-story">
+                        <h2>Success Story <a href="#"><span class="icon icon-eye"></span>View All</a></h2>
+                        <div class="story-slide">
+                            <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/user-img/story-img1.png') }}" alt=""></div>
+                            <div class="text">
+                                <p>We have 20 years experience planning and organizing beautiful weddings and events. We have built up excellent relationships with the most professional suppliers on the coast to help with your every desire. From a small intimate gathering to a more luxurious wedding day we can help you make your Dream Wedding a reality. </p>
+                                <div class="name">- Larry Cook</div>
+                            </div>
+                        </div>
+                        <div class="story-slide">
+                            <div class="img"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/user-img/story-img2.png') }}" alt=""></div>
+                            <div class="text">
+                                <p>We have 20 years experience planning and organizing beautiful weddings and events. We have built up excellent relationships with the most professional suppliers on the coast to help with your every desire. From a small intimate gathering to a more luxurious wedding day we can help you make your Dream Wedding a reality.</p>
+                                <div class="name">- Stacy Benjamin</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="share-story">
+                        {{ form_start(form) }}
+                        <B>Date</B>
+                        <BR>
+                        {{ form_widget(form.date_publication) }}
+                        <B>titre</B>
+                        <BR>
+                        {{ form_widget(form.titre) }}
+                        <BR>
+                        <B>votre Experience</B>
+                        <BR>
+                        {{ form_widget(form.statut) }}
+                        <BR>
+                        {{ form_widget(form.partager) }}
+
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="news-view">
+        <div class="container">
+            <div class="heading">
+                <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                <div class="text">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="info-text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div class="news-box">
+                        <div class="row">
+                            <div class="col-sm-6"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/news-img/news-img1.jpg') }}" alt=""></div>
+                            <div class="col-sm-6">
+                                <div class="text">
+                                    <div class="news-title">
+                                        <h3>Post with Image Here</h3>
+                                        <span>Rashed kabir on 24 Feb, 2014</span>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="#" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="news-box style2">
+                                <div class="text">
+                                    <div class="news-title">
+                                        <h3>Post with Image Here</h3>
+                                        <span>Rashed kabir on 24 Feb, 2014</span>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="#" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="news-box style2">
+                                <div class="text">
+                                    <div class="news-title">
+                                        <h3>Post with Image Here</h3>
+                                        <span>Rashed kabir on 24 Feb, 2014</span>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                    <a href="#" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="news-box style3">
+                        <img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/news-img/news-img2.png') }}" alt="">
+                        <div class="text">
+                            <div class="news-title">
+                                <h3>Post with Image Here</h3>
+                                <span>Rashed kabir on 24 Feb, 2014</span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="event-sponsor">
+        <div class="container">
+            <div class="heading">
+                <div class="icon"><em class="icon icon-heading-icon"></em></div>
+                <div class="text">
+                    <h2>Clients </h2>
+                </div>
+                <div class="info-text">It has survived not only five centuries, but also the leap into electronic typesetting,</div>
+            </div>
+            <div class="sponsor-slider">
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo1.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo2.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo3.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo4.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo1.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo2.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo3.png') }}" alt=""></a></div>
+                <div class="item"><a href="#"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/sponsor-logo/sponsor-logo4.png') }}" alt=""></a></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+pidevhome_homepage:
+    path:     /
+    defaults: { _controller: PidevhomeBundle:Default:index }
+home_page:
+    path:     /home1
+    defaults: { _controller: PidevhomeBundle:Home:home }
+index_page:
+    path:     /home
+    defaults: { _controller: PidevhomeBundle:Experience:blogadd}
+register_page:
+    path:     /register
+    defaults: { _controller: PidevhomeBundle:Home:register_methode }
+aboutUs_page:
+    path:     /aboutUs
+    defaults: { _controller: PidevhomeBundle:Home:about_Us }
+search_result_page:
+    path:     /searchresult
+    defaults: { _controller: PidevhomeBundle:Home:search_result }
+search_detail_page:
+    path:     /searchdetail
+    defaults: { _controller: PidevhomeBundle:Home:search_detail }
+blog_details_page:
+    path:     /blogdetails
+    defaults: { _controller: PidevhomeBundle:Home:blog_details }
+news_details_page:
+    path:     /newsdetails
+    defaults: { _controller: PidevhomeBundle:Home:news_details }
+booking_step1_page:
+    path:     /bookingstep1
+    defaults: { _controller: PidevhomeBundle:Home:booking_step1 }
+booking_step2_page:
+    path:     /bookingstep2
+    defaults: { _controller: PidevhomeBundle:Home:booking_step2 }
+booking_step3_page:
+    path:     /bookingstep3
+    defaults: { _controller: PidevhomeBundle:Home:booking_step3 }
+career_page:
+    path:     /career
+    defaults: { _controller: PidevhomeBundle:Home:career_methode }
+mapView_page:
+    path:     /mapView
+    defaults: { _controller: PidevhomeBundle:Home:mapView_methode }
+privacy_policy_page:
+    path:     /privacypolicy
+    defaults: { _controller: PidevhomeBundle:Home:privacy_policy }
+account_profile_page:
+    path:     /accountprofile
+    defaults: { _controller: PidevhomeBundle:Home:account_profile }
+account_booking_page:
+    path:     /accountbooking
+    defaults: { _controller: PidevhomeBundle:Home:account_booking }
+account_password_page:
+    path:     /accountpassword
+    defaults: { _controller: PidevhomeBundle:Home:account_password }
+team_page:
+    path:     /team
+    defaults: { _controller: PidevhomeBundle:Home:team_mathode }
+wishlist_page:
+    path:     /wishlist
+    defaults: { _controller: PidevhomeBundle:Home:wishlist_mathode }
+faq_page:
+    path:     /faq
+    defaults: { _controller: PidevhomeBundle:Home:faq_mathode }
+contact_page:
+    path:     /contact
+    defaults: { _controller: PidevhomeBundle:Home:contact_mathode }
+blog_page:
+    path:     /bloglist
+    defaults: { _controller: PidevhomeBundle:Experience:bloglist }
+blogdelete:
+    path:     /blogdelete/{ID}
+    defaults: { _controller: PidevhomeBundle:Experience:blogdelete }
+blogupdate:
+    path:     /blogupdate/{ID}
+    defaults: { _controller: PidevhomeBundle:Experience:blogupdate }
+

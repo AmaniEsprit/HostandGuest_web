@@ -1,0 +1,4 @@
+services:
+#    host_guest_user.example:
+#        class: HostGuest\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

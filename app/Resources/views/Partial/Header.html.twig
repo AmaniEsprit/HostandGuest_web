@@ -1,0 +1,96 @@
+<header id="header">
+    <div class="quck-link">
+        <div class="container">
+            <div class="mail"><a href="MailTo:DariDarek@gmail.com"><span class="icon icon-envelope"></span>DariDarek@gmail.com</a></div>
+            <div class="right-link">
+                <ul>
+                    {% if app.user %}
+                    Bienvenue {{app.user.username}}
+                        <a href="{{ path('fos_user_security_logout') }}">
+                            {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                        </a>
+                    {% else %}
+                    <li><a href="{{ path('register_page') }}"><span class="icon icon-multi-user"></span>Devenez Hote</a></li>
+                    <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
+                    <li><a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <nav id="nav-main">
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <a href="{{ path('index_page') }}" class="navbar-brand"><img src="{{ asset('templates/120.72.91.53/themeforest/event_planning/images/logo.jpg') }}" alt=""></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon1-barMenu"></span>
+                        <span class="icon1-barMenu"></span>
+                        <span class="icon1-barMenu"></span>
+                    </button>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ path('index_page') }}">Accueil</a></li>
+                        <li><a href="{{ path('aboutUs_page') }}">A propos</a></li>
+
+                        <li class="single-col">
+                            <a href="#">Services <span class="icon icon-arrow-down"></span></a>
+                            <ul>
+                                {% if app.user %}
+
+
+                                <li>
+                                    <a href="{{ path('account_profile_page') }}">Mon compte <span class="icon icon-arrow-right"></span></a>
+                                    <ul>
+                                        <li><a href="{{ path('fos_user_profile_show') }}">Profile</a></li>
+                                        <li><a href="{{ path('account_booking_page') }}">Orders</a></li>
+                                        <li><a href="{{ path('fos_user_change_password') }}">Changer mot de passe</a></li>
+                                    </ul>
+                                </li>
+                                    <li><a href="{{ path('search_result_page') }}">Logement</a></li>
+                                    <li><a href="{{ path('team_page') }}">Guide</a></li>
+                                    <li><a href="{{ path('search_result_page') }}">Moyen de transport</a></li>
+                                    <li><a href="{{ path('career_page') }}">Amical</a></li>
+                                    <li><a href="{{ path('blog_page') }}">Expériences</a></li>
+
+
+
+                                {% else %}
+                                <li><a href="{{ path('search_result_page') }}">Logement</a></li>
+                                <li><a href="{{ path('team_page') }}">Guide</a></li>
+                                <li><a href="{{ path('search_result_page') }}">Moyen de transport</a></li>
+                                <li><a href="{{ path('career_page') }}">Amical</a></li>
+                                <li><a href="{{ path('blog_page') }}">Expériences</a></li>
+
+
+
+
+                                {% endif %}
+                            </ul>
+                        </li>
+
+                        <li><a href="{{ path('contact_page') }}">Contactez nous</a></li>
+                    </ul>
+                    <div class="search-box">
+                        <div class="search-icon"><span class="icon icon-search"></span></div>
+                        <div class="search-view">
+                            <div class="input-box">
+                                <form>
+                                    <input type="text" placeholder="Search here">
+                                    <input type="submit" value="" >
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
